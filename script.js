@@ -8,15 +8,16 @@ class Rectangle {
 		return this._width;
 	}
     get height(){
-		return this.height;
+		return this._height;
 	}
 	getArea(){
 		return this._width*this._height;
 	}
 }
 
-class Square extends Animal {
+class Square extends Rectangle {
 	constructor(side){
+		super(width,height)
 		this._side=side;
 	}
 	getPerimeter(){
